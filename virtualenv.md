@@ -1,5 +1,7 @@
 ### Install virtualenv (python3)
-    pip3 install virtualenv
+built-in with 3.3, or can be added to 2.6+/3.1+ : https://packaging.python.org/installing/#creating-virtual-environments
+
+    pip install virtualenv
 
 ### Create new virtualenv specifying which version of Pyhton using
     virtualenv -p /usr/bin/python3 virtualenv
