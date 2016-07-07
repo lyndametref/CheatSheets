@@ -1,16 +1,19 @@
 ### Install virtualenv (python3)
-built-in with 3.3, or can be added to 2.6+/3.1+ : https://packaging.python.org/installing/#creating-virtual-environments
+https://packaging.python.org/installing/#creating-virtual-environments
+
+3.3+ built-in. In Ubuntu:
+
+    sudo apt-get install python3-venv
+    
+can be added to 2.6+/3.1+ : 
 
     pip install virtualenv
 
 ### Create new virtualenv specifying which version of Pyhton using
-    virtualenv -p /usr/bin/python3 virtualenv
+    python3 -m venv my_venv_path
 
-easier if ~/.local/bin is in PATH, so adding to `~/.bashrc` the following:
-    export PATH=~/.local/bin:$PATH
-    
 ### activate the virtualenv
-    source virtualenv/bin/activate
+    source my_venv_path/bin/activate
 
 ### deatctivate virtualenv
     deactivate
