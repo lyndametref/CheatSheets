@@ -1,4 +1,4 @@
-### Install virtualenv (python3)
+### Install virtualenv
 https://packaging.python.org/installing/#creating-virtual-environments
 
 3.3+ built-in. In Ubuntu:
