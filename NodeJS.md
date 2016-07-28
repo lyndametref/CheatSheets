@@ -3,6 +3,7 @@
     
 ### set the global install path
 The global install put the files in `~/share/npm-global/`
+
     npm config set prefix ~/share/npm-global/
     
 ### add exec path to PATH
