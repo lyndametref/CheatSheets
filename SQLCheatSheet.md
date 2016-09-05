@@ -28,6 +28,7 @@
     SELECT * FROM TableName
         WHERE attr2Name='attr2Value'
         ORDER BY attr1Name
+        ORDER BY attr2Name DESC
         JOIN OtherTableName ON TableName.OtherTableName_id = OtherTableName.id  
         # if no ON clause, all combinations are computed
 ```
