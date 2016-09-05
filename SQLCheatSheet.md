@@ -16,6 +16,9 @@
 ```sql
     INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey) 
         VALUES ('attr1Value', 'attr2Value', 333)
+        
+    INSERT OR IGNORE # clause ignored if something don't want to work typically unique statuement is infringed
+    INSERT OR REPLACE # replace an entry if the unique constrain would be infringed with the insertion
     
     DELETE FROM TableName WHERE attr2Name='attr2Value'
     
