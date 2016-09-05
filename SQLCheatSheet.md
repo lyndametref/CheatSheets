@@ -2,13 +2,18 @@
 * Dont forgete the `;` at the end of each call for multiple calls
 * Commands are case insensitive
 
-# Basic Commands
+# Schema Commands
 ```sql
     CREATE TABLE TableName (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
         attr1Name VARCHAR(128), 
         attr2Name VARCHAR(128),
         OtherTableName_id INTEGER) # Foreign Key
     
+    DROP TABLE TableName
+```
+
+# Data Commands
+```sql
     INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey) 
         VALUES ('attr1Value', 'attr2Value', 333)
     
