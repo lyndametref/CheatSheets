@@ -6,17 +6,20 @@
     CREATE TABLE TableName (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
         attr1Name VARCHAR(128), 
         attr2Name VARCHAR(128),
-        attrForeignKey INTEGER)
+        OtherTableName_id INTEGER) # Foreign Key
     
-    INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey) VALUES ('attr1Value', 'attr2Value', 333)
+    INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey) 
+        VALUES ('attr1Value', 'attr2Value', 333)
     
     DELETE FROM TableName WHERE attr2Name='attr2Value'
     
-    UPDATE TableName SET attr1Name='attr1NewValue' WHERE attr2Name='attr2Value' # works also if WHERE is on attr1
+    UPDATE TableName SET attr1Name='attr1NewValue' 
+        WHERE attr2Name='attr2Value' # works also if WHERE is on attr1
     
     SELECT * FROM TableName
         WHERE attr2Name='attr2Value'
         ORDER BY attr1Name
+        JOIN OtherTableName TableName.OtherTableName_id = OtherTableName.id
   
 # Definition
 * Primary key: id of a tuple (entry)
