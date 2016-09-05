@@ -1,6 +1,6 @@
 # Anchors
-^	Start of line or start of string
-$	End of line or end of string
+    ^	Start of line or start of string
+    $	End of line or end of string
 \A \Z Start/end of string
 \b Word boundary
 \B Not word boundary
