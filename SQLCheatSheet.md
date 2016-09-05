@@ -1,6 +1,8 @@
+# Comment
 * Dont forgete the `;` at the end of each call for multiple calls
 * Commands are case insensitive
 
+# Basic Commands
     CREATE TABLE TableName (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
         attr1Name VARCHAR(128), 
         attr2Name VARCHAR(128),
