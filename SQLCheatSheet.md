@@ -19,7 +19,7 @@
     SELECT * FROM TableName
         WHERE attr2Name='attr2Value'
         ORDER BY attr1Name
-        JOIN OtherTableName TableName.OtherTableName_id = OtherTableName.id
+        JOIN OtherTableName ON TableName.OtherTableName_id = OtherTableName.id  # if no ON clause, all combinations are computed
   
 # Definition
 * Primary key: id of a tuple (entry)
