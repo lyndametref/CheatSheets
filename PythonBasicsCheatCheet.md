@@ -4,6 +4,9 @@
   String      "­Hello", 'Goodbye', """­Multiline­"""
   Boolean     True, False
   List        [ value, ... ]
-  Tuple       ( value, ... )1
+  Tuple       ( value, ... )
   Dictionary  { key: value, ... }
-  Set         { value, value, ... }2
+  Set         { value, value, ... }
+  
+# References
+* https://www.cheatography.com/sschaub/cheat-sheets/essential-python/
