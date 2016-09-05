@@ -3,6 +3,7 @@
 * Commands are case insensitive
 
 # Basic Commands
+```sql
     CREATE TABLE TableName (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
         attr1Name VARCHAR(128), 
         attr2Name VARCHAR(128),
@@ -20,7 +21,7 @@
         WHERE attr2Name='attr2Value'
         ORDER BY attr1Name
         JOIN OtherTableName ON TableName.OtherTableName_id = OtherTableName.id  # if no ON clause, all combinations are computed
-  
+```
 # Definition
 * Primary key: id of a tuple (entry)
 * Foreign key: refere to the primary key of another table
