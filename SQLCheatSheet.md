@@ -52,7 +52,7 @@
 * Primary key: id of a tuple (entry)
 * Foreign key: refere to the primary key of another table
 * Logical key: can be used in a WHERE clause  
-* Junction table: table with several foreign keys and no primary key, may contain other metadata on the relation. Used for many-to-may relationship.
+* Junction table: table with several foreign keys and no primary key, may contain other metadata on the relation. Combination of the foreign keys is defined as the primary key. Used for many-to-may relationship.
 
 # References
 * https://www.cheatography.com/davechild/cheat-sheets/mysql/
