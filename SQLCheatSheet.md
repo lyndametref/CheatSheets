@@ -28,7 +28,27 @@
         JOIN OtherTableName ON TableName.OtherTableName_id = OtherTableName.id  
         # if no ON clause, all combinations are computed
 ```
+
+# Data types (MySQL)
+###Binary : 
+    * BIT (array of bits, specify lenght)
+    * BOOL (=`TINYINT(1)`)
+	
+###Integer :
+    * `TINYINT` (-128 to 127)
+    * `SMALLINT` (-32768 to 32767)
+    * `INT` (-2147483648 to 2147483647)
+    * `BIGINT` (-9223372036854775808 to 9223372036854775807)
+
+###Decimal numbers:
+    *`DECIMAL`: fixed-point number
+    *`FLOAT`: floating point value
+    *`DOUBLE`: double precision floating point value
+
 # Definition
 * Primary key: id of a tuple (entry)
 * Foreign key: refere to the primary key of another table
 * Logical key: can be used in a WHERE clause  
+
+# References
+* https://www.cheatography.com/davechild/cheat-sheets/mysql/
