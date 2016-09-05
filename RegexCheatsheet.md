@@ -6,7 +6,7 @@
     \B Not word boundary
     \< \> Start/End of word
 
-Characters types
+# Characters types
     .	Matches any character except new line (\n)
     \n New line
     \r Carriage return
@@ -28,7 +28,7 @@ Characters types
     ?()| Condition [if then else]
     
 
-Quantifiers
+# Quantifiers
     * Repeat 0 or more times
     + Repeat 1 or more times
     {3} Repeat exactly 3 times
