@@ -1,32 +1,32 @@
 # Anchors
     ^	Start of line or start of string
     $	End of line or end of string
-\A \Z Start/end of string
-\b Word boundary
-\B Not word boundary
-\< \> Start/End of word
+    \A \Z Start/end of string
+    \b Word boundary
+    \B Not word boundary
+    \< \> Start/End of word
 
 Characters types
-.	Matches any character except new line (\n)
-\n New line
-\r Carriage return
-\t Tab
-\s Whitespace
-\S Non-whitespace character
-\c Control character
-\d Digit
-\D Not digit
-\w Word
-\W Not word
+    .	Matches any character except new line (\n)
+    \n New line
+    \r Carriage return
+    \t Tab
+    \s Whitespace
+    \S Non-whitespace character
+    \c Control character
+    \d Digit
+    \D Not digit
+    \w Word
+    \W Not word
 
 # Assertions
-?= Lookahead assertion
-?! Negative lookahead
-?<= Lookbehind assertion
-?!= or ?<! Negative lookbehind
-?() Condition [if then]
-?()| Condition [if then else]
-
+    ?= Lookahead assertion
+    ?! Negative lookahead
+    ?<= Lookbehind assertion
+    ?!= or ?<! Negative lookbehind
+    ?() Condition [if then]
+    ?()| Condition [if then else]
+    
 
 Quantifiers
 * Repeat 0 or more times
