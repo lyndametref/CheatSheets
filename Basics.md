@@ -4,9 +4,14 @@
 - [R Cheat Sheet: Basics](#r-cheat-sheet-basics)
 	- [Functions, conditions and loops](#functions-conditions-and-loops)
 	- [Datatypes](#datatypes)
+	- [Create Data](#create-data)
+	- [Is it...?](#is-it)
+	- [Strings](#strings)
+	- [Input and output](#input-and-output)
 	- [References](#references)
 
 <!-- /TOC -->
+
 ## Functions, conditions and loops
 ```r
     anExampleFunction <- function(x, ...) {
@@ -60,6 +65,75 @@ Other stuffs:
    > class(x$fac)
    [1] "character"
 ```
+
+## Create Data
+
+* `seq(from,to)` generates a  sequence
+```
+	> seq(1,10,by=2)
+	[1] 1 3 5 7 9
+	> seq(1,10,length=2)
+	[1]  1 10
+	> seq(1,10,along=1:4)
+	[1]  1  4  7 10
+```
+
+* `rep(x,n)` replicate x n times
+```
+	> rep(1:3,2)
+	[1] 1 2 3 1 2 3
+	> rep(1:3,each=2)
+	[1] 1 1 2 2 3 3
+```
+
+* `runif` random unif distributed, default 0-1
+```
+> runif(5)
+[1] 0.4490484 0.5588949 0.2798801 0.8900940 0.7158493
+```
+
+## Is it...?
+`is.na(x)`, `is.null(x)`, `is.array(x)`, `is.data.frame(x)`,
+`is.numeric(x)`, `is.complex(x)`, `is.character(x)`
+
+## Strings
+* `paste(...,sep=" ")` concatenate vectors after converting to character;
+* `substr(x,start,stop)``
+```
+> substr("Hello World", 7,10)
+[1] "Worl"
+```
+* strsplit(x,split) split x according to split
+```
+> strsplit("Hello World",split = " ")
+[[1]]
+[1] "Hello" "World"
+```
+
+* `grep(pattern,x)` searches for matches to pattern within x
+```
+> grep("[a-e]", letters)
+ [1]  1  2  3  4  5
+```
+* `gsub(pattern,replacement,x)` replacement of matches to pattern
+* `sub()` same as `gsub` but only replaces the first occurrence.
+* `tolower(x)` convert to lowercase
+* `toupper(x)` convert to uppercase
+* `match(x,table)` or `x %in% table` a vector of the positions of first matches for the elements of x among table
+
+## Input and output
+* load() load the datasets written with `save`
+* read.table(file) reads  a  file  in  table  format  and  creates  a  data
+frame from it
+	* default separator sep="" is any whitespace
+	* header=TRUE read the first line as a header of column names
+	* as.is=TRUE prevent character vectors from being converted to factors
+	* skip=n to skip n lines before reading data
+* read.csv("filename",header=TRUE)
+* read.fwf(file,widths) read a table of fixed width formatted data into a ’data.frame’;
+	* widths is an integer vector, giving the widths of the fixed-width fields
+* save(file,...) saves the specified objects (...)  in the XDR platform-
+independent binary format
 
 ## References
 
