@@ -20,6 +20,18 @@ Other stuffs:
 ## Datatypes
 * vectors: `x=[1:10]`, `x=['aaa','bbbb']`, `x=[1.2,2.5]` only one object type
 * list: Lists have elements, each of which can contain any type of R object
+```r
+    > mylist<-list(x='a',y=2,z=1:10,n='Hello world')
+    > mylist[1]
+    $x
+    [1] "a"
+    > mylist[[1]]
+    [1] "a"
+    > mylist["z"]
+    $z
+    [1]  1  2  3  4  5  6  7  8  9 10
+    > mylist$n
+    [1] "Hello world"
 
 ## Applying function
 * `apply(X,INDEX,FUN=)` return a vector or array or list of values obtained by applying a function FUN to margins (INDEX) of X
