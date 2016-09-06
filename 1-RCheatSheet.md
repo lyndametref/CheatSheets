@@ -13,6 +13,7 @@
 ```
 
 Other stuffs:
+
 *`break` and `next` do not return a value as they transfer control within the loop.
 ```r
 do.call(funname, args) ##executes a function call from the name of the function and a list of arguments to be passed to it
