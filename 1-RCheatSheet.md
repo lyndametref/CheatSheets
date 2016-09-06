@@ -32,6 +32,7 @@ Other stuffs:
     [1]  1  2  3  4  5  6  7  8  9 10
     > mylist$n
     [1] "Hello world"
+```
 
 ## Applying function
 * `apply(X,INDEX,FUN=)` return a vector or array or list of values obtained by applying a function FUN to margins (INDEX) of X
