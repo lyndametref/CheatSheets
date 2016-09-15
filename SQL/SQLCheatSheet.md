@@ -1,30 +1,32 @@
-# Comment
+# SQL: Structured Query language
+![](https://en.wikipedia.org/wiki/Relational_database#/media/File:Relational_database_terms.svg)
+
 * Dont forgete the `;` at the end of each call for multiple calls
 * Commands are case insensitive
 
 # Schema Commands
 ```sql
     CREATE TABLE TableName (id INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
-        attr1Name VARCHAR(128), 
+        attr1Name VARCHAR(128),
         attr2Name VARCHAR(128),
         OtherTableName_id INTEGER) # Foreign Key
-    
+
     DROP TABLE TableName
 ```
 
 # Data Commands
 ```sql
-    INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey) 
+    INSERT INTO TableName (attr1Name, attr2Name,attrForeignKey)
         VALUES ('attr1Value', 'attr2Value', 333)
-        
+
     INSERT OR IGNORE # clause ignored if INSERT make an error, f.ex unique statuement is infringed
     INSERT OR REPLACE # replace an entry if the unique constrain would be infringed with the insertion
-    
+
     DELETE FROM TableName WHERE attr2Name='attr2Value'
-    
-    UPDATE TableName SET attr1Name='attr1NewValue' 
+
+    UPDATE TableName SET attr1Name='attr1NewValue'
         WHERE attr2Name='attr2Value' # works also if WHERE is on attr1
-    
+
     SELECT * FROM TableName
         WHERE attr2Name='attr2Value'
         ORDER BY attr1Name
@@ -34,10 +36,10 @@
 ```
 
 # Data types (MySQL)
-###Binary : 
+###Binary :
     * BIT (array of bits, specify lenght)
     * BOOL (=`TINYINT(1)`)
-	
+
 ###Integer :
     * `TINYINT` (-128 to 127)
     * `SMALLINT` (-32768 to 32767)
