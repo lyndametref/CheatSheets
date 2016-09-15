@@ -1,12 +1,15 @@
-### Start container dicsconnected from the shell
+### list running containers
+    docker ps
 
-    docker-compose up -d
-
-### Shell in running container
+### Shell in running container (run a command in a running container)
 
     docker exec -it 6e796a466e53 bash
 
-### Stop and delete containers
+### Start a set of containers dicsconnected from the shell
+
+    docker-compose up -d
+
+### Stop and delete sets of containers
 
     docker-compose stop
     docker-compose rm
