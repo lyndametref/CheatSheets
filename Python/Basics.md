@@ -13,9 +13,6 @@
    import os
    os.listdir("/path/to/folder/")
 
-## Regular Expressions
-   import re
-   re.search('me', "It's all about me!")
 
 * https://docs.python.org/3.5/howto/regex.html
 
