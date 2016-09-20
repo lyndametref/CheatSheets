@@ -10,11 +10,12 @@
     Set         { value, value, ... }
 
 ## List file of a directory
-   import os
-   os.listdir("/path/to/folder/")
+```python
+import os
+os.listdir("/path/to/folder/")
+```
 
-
-* https://docs.python.org/3.5/howto/regex.html
+*   [https://docs.python.org/3.5/howto/regex.html] (RegExp on Python Docs)
 
 # References
-* https://www.cheatography.com/sschaub/cheat-sheets/essential-python/
+*   [https://www.cheatography.com/sschaub/cheat-sheets/essential-python/](Cheatography)
