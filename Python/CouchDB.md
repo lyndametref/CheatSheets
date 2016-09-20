@@ -20,6 +20,8 @@ db = couch['db_name']
 doc = {'foo': 'bar'}
 db.save(doc)
 db.save(json.loads(json.dumps(my_dict))) # create new document with a dict
+db.delete(doc) # delete from db
+couch.delete('db_name') # delete DB
 ```
 
 ## References
