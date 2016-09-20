@@ -15,7 +15,9 @@ import os
 os.listdir("/path/to/folder/")
 ```
 
-*   [https://docs.python.org/3.5/howto/regex.html] (RegExp on Python Docs)
+## Terminate script execution
+    import sys
+    sys.exit("Error message")
 
 # References
 *   [https://www.cheatography.com/sschaub/cheat-sheets/essential-python/](Cheatography)
