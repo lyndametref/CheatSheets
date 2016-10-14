@@ -1,5 +1,16 @@
 # Pyhton Basic References
 
+## Configuration
+### .gitignore
+note: the name of the venv folder should start with `venv`
+
+```
+*.pyc
+__pycache__
+venv*
+```
+
+
 ## Control Loop
 ```python
 for letter in 'Python':     # First Example
@@ -51,6 +62,11 @@ os.listdir("/path/to/folder/")
 ## Terminate script execution
     import sys
     sys.exit("Error message")
+
+## Interpreter
+Execute file in Interpreter:
+    exec(open("./filename").read())
+
 
 # References
 *   [https://www.cheatography.com/sschaub/cheat-sheets/essential-python/](Cheatography)
