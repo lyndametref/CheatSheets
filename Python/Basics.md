@@ -1,14 +1,5 @@
 # Pyhton Basic References
 
-## Configuration
-### .gitignore
-note: the name of the venv folder should start with `venv`
-
-```
-*.pyc
-__pycache__
-venv*
-```
 
 
 ## Control Loop
@@ -67,6 +58,16 @@ os.listdir("/path/to/folder/")
 Execute file in Interpreter:
     exec(open("./filename").read())
 
+## Configuration
+
+### .gitignore
+note: the name of the venv folder should start with `venv`
+
+```
+*.pyc
+__pycache__
+venv*
+```
 
 # References
 *   [https://www.cheatography.com/sschaub/cheat-sheets/essential-python/](Cheatography)
