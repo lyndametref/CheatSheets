@@ -10,7 +10,10 @@ org = email.split('@')[1] # org = 'b.c'
 ## Regular Expressions
 ```python
 import re
-re.search('me', "It's all about me!")
+m = re.search('me', "It's all about me!")
+m.group(n) # return matching string of n-1th matching
+
+
 ```
 
 ### find all element
